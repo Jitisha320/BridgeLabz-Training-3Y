@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1e293b;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(15, 23, 42, 0.95);
+            padding: 18px;
+            color: white;
+            z-index: 10;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            position: relative;
+            height: 80vh;
+            background-image:
+                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("hero.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .hero h1 {
+            position: absolute;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        section {
+            padding: 60px 8%;
+            margin: 20px 0;
+        }
+
+        #about {
+            outline: 2px solid #cbd5e1;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-content div {
+            flex: 1;
+        }
+
+        .about-content img {
+            width: 100%;
+            max-width: 400px;
+            border: 5px solid #2563eb;
+            padding: 5px;
+        }
+
+        .services {
+            display: flex;
+            gap: 25px;
+        }
+
+        .service-box {
+            flex: 1;
+            padding: 30px;
+            border: 2px solid #cbd5e1;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        #contact {
+            background-color: #f1f5f9;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #94a3b8;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 12px 30px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .top-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            padding: 12px;
+            background-color: #2563eb;
+            color: white;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 700px) {
+            .about-content,
+            .services {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <strong>My Website</strong>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to My Website</h1>
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-content">
+
+        <div>
+            <p>
+                I am a technology enthusiast interested in
+                web development, cloud computing and programming.
+            </p>
+        </div>
+
+        <div>
+            <img src="about.jpg" alt="About Me">
+        </div>
+
+    </div>
+
+</section>
+
+<section id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="service-box">
+            <h3>Web Development</h3>
+            <p>We create modern and responsive websites.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Cloud Computing</h3>
+            <p>We provide cloud-based technology solutions.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Consulting</h3>
+            <p>We provide technology consulting services.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Send</button>
+
+    </form>
+
+</section>
+
+<a href="#home" class="top-button">↑</a>
+
+<footer>
+    <p>&copy; 2026 My Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #172554;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1em;
+        }
+
+        main {
+            flex: 1;
+            padding-top: 100px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8%;
+            padding: 5%;
+        }
+
+        .bio {
+            width: 50%;
+        }
+
+        .bio h2 {
+            font-size: 36px;
+        }
+
+        .bio p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .profile {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .bio {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jitisha Agarwal</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="bio">
+            <h2>Welcome to My Portfolio</h2>
+            <p>
+                I am a B.Tech student interested in Cloud Computing,
+                Web Development and programming. I enjoy learning
+                new technologies and building useful projects.
+            </p>
+        </div>
+
+        <img src="profile.jpg" alt="Profile Image" class="profile">
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Jitisha Agarwal</p>
+</footer>
+
+</body>
+</html>
