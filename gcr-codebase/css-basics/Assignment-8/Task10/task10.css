@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    padding: 25px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.card {
+    width: 700px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #bbb;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ddd;
+}
+
+
+.content {
+    flex: 1;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #555;
+    border-color: #555;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+
+footer {
+    padding: 18px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .image-section,
+    .content {
+        width: 100%;
+    }
+}

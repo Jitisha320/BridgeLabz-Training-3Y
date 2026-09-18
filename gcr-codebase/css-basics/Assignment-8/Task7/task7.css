@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+
+    background: linear-gradient(135deg, #eee, #bbb);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ui-card {
+    width: 450px;
+    max-width: 90%;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px #999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ui-card h1 {
+    text-align: center;
+}
+
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.search input {
+    flex: 1;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input,
+select {
+    border: 2px solid #aaa;
+}
+
+
+input:focus,
+select:focus {
+    outline: 2px solid #555;
+}
+
+
+button {
+    border: 2px solid #333;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons button {
+    flex: 1;
+}
+
+select {
+    width: 100%;
+}
